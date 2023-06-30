@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Budget Noting App</title>
+</head>
+<link rel="stylesheet" href="./assets/css/app.css">
+<body>
+  <div class="container">
+    <h1>Budget Noting App</h1>
+    <div class="input-container">
+      <label for="amount-input">Amount:</label>
+      <input id="amount-input" type="number" placeholder="Enter amount" required>
+    </div>
+    <div class="input-container">
+      <label for="item-input">Item:</label>
+      <input id="item-input" type="text" placeholder="Enter item name" required>
+    </div>
+    <div class="input-container">
+      <label>Type:</label>
+      <input type="radio" id="income-radio" name="entry-type" value="income" checked>
+      <label for="income-radio">Income</label>
+      <input type="radio" id="expenses-radio" name="entry-type" value="expenses">
+      <label for="expenses-radio">Expenses</label>
+    </div>
+    <button onclick="addEntry()">Add Entry</button>
+    <div id="current-amount">Current Amount: 0</div>
+    <canvas id="graph"></canvas>
+    <div id="entries-list"></div>
+    <button onclick="confirmShare()">Share Budget</button>
+    <div id="share-link" style="display: none;"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
