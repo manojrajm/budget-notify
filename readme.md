@@ -15,6 +15,8 @@
   ## Preview
 ![alt text](https://github.com/manojrajm/budget-notify/blob/master/assets/images/sample1.png?raw=true)
 
+![alt text](https://github.com/manojrajm/budget-notify/blob/master/assets/images/sample2.png?raw=true)
+
 
 
  
