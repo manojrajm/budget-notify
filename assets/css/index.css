@@ -165,7 +165,8 @@ form .btn{
 form .btn .btn-layer{
   height: 100%;
   width: 300%;
-  position: absolute;
+  /* position: absolute; */
+  color: #000;
   left: -100%;
   background: -webkit-linear-gradient(right, #a445b2, #fa4299, #a445b2, #fa4299);
   border-radius: 5px;
@@ -219,4 +220,69 @@ form .btn input[type="submit"]{
   margin-top: -680px;
   margin-left:-130px ;
 
+}
+
+
+@media screen and (max-width: 768px) {
+  html, body {
+    overflow: hidden;
+  }
+  .wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 55px;
+  }
+  .wrapper .title-text {
+    flex-direction: row;
+    z-index: 999;
+    /* align-items: center; */
+  }
+  .wrapper .title {
+    font-size: 28px;
+  }
+  .slide-controls, .form-inner {
+    width: 100%;
+  }
+  .form-inner form {
+    width: 100%;
+  }
+  .logo {
+    width: 70%;
+    height: auto;
+    margin: 50px auto;
+    display: none;
+  }
+  .png {
+    width: 75%;
+    padding-left:-600px;
+    height: auto;
+    margin: 0 30px;
+  }
+  .screen__background__shape2 {
+    height: 800px;
+    width: 800px;
+    top: -450px;
+    right: 20%;
+  }
+}
+
+/* Tablet responsiveness */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -300px;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+  }
+}
+
+/* Large Desktop responsiveness */
+@media screen and (min-width: 1025px) {
+  .wrapper {
+    margin-left: 1120px;
+    margin-top: -620px;
+    overflow-x: hidden;
+
+  }
 }
